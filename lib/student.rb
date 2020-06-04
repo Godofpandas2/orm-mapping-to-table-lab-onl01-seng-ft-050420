@@ -13,7 +13,7 @@ class Student
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
-      VALUES (?, ?)
+      VALUES (?, ?);
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
   end
@@ -24,7 +24,7 @@ class Student
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT,
-    )
+    );
     SQL
     DB[:conn].execute(sql)
   end
