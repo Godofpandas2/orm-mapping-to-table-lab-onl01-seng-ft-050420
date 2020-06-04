@@ -10,6 +10,9 @@ class Student
     @grade = grade
   end
 
+  def self.create_table
+
+  end
 
   #  with DB[:conn]
 
